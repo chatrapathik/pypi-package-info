@@ -1,6 +1,6 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
-version = "v1.0.1"
+version = "v1.0.3"
 setup(
     name="ppvt",
     python_requires=">3.5.1",
@@ -12,11 +12,13 @@ setup(
     url="https://github.com/chatrapathik/python-package-version-tool.git",
     license="MIT License",
     install_requires=["requests"],
+    package_dir={"ppvt": "ppvt"},
+    packages=find_packages("."),
     classifiers=[
         "Programming Language :: Python :: 3.5",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
     ],
-    entry_points={"console_scripts": ["ppvt = pypi:run"]},
+    entry_points={"console_scripts": ["ppvt = ppvt:run"]},
 )
