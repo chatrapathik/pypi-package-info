@@ -1,6 +1,6 @@
-# Pypi Package Info(ppi) 
+# Python Package Version Tool(ppvt)
 
-Pypi-package-info is a python package, which will helps to find the all, latest verion of gievn python package.
+Python-package-version-tool is a python package, which will helps to find the all, latest verion of gievn python package.
 
 The main purpose of this package is to help the developers to check the latest version of python packages and their supported python version.
 
@@ -22,7 +22,7 @@ $ python3 -m venv env_name
 # Activate Virtual env.
 $ source /env_name/bin/activate
 # Clone the repo.
-$ git clone https://github.com/chatrapathik/pypi-package-info.git
+$ git clone https://github.com/chatrapathik/python-package-version-tool.git
 $ cd pypi-package-info
 $ pip install -r requirements.txt
 ```
