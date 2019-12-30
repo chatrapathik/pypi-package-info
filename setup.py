@@ -16,7 +16,7 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Environment :: Console",
         "Intended Audience :: Developers",
-        "License :: MIT License",
+        "License :: OSI Approved :: MIT License",
     ],
     entry_points={"console_scripts": ["ppvt = pypi:run"]},
 )
