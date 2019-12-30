@@ -1,1 +1,1 @@
-import run
+from run import main
