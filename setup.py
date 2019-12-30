@@ -1,6 +1,6 @@
 from setuptools import setup
 
-version = "0.0.1"
+version = "v1.0.1"
 setup(
     name="ppvt",
     python_requires=">3.5.1",
