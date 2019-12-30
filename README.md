@@ -7,31 +7,16 @@ The main purpose of this package is to help the developers to check the latest v
 
 ## Installation
 
-> Prerequisites: Python:3.6
-```bash
-# Create seperate directory. 
-$ sudo mkdir `your dir`
-# Move to that directory.
-$ cd your dir
-# Install pip3
-$ sudo apt-get install python3-pip
-# Install Virtualenv
-$ sudo pip3 install virtualenv
-# Create virtual env
-$ python3 -m venv env_name
-# Activate Virtual env.
-$ source /env_name/bin/activate
-# Clone the repo.
-$ git clone https://github.com/chatrapathik/python-package-version-tool.git
-$ cd pypi-package-info
-$ pip install -r requirements.txt
-```
+Prerequisites: Python:3.6
+    ```
+        $ pip install ppvt
+    ```
 
 ## Start Usage
+
+Run the help command to get all the options.
 ```python
->> cd /pypi
->> Run the help command to get all the options.
-$ python run.py -h
+$ ppvt -h
     usage: run.py [-h] [-r [INPUT_FILE]] [-p [PACKAGE]] [-o [OUTPUT_FILE]]
               [-l [LATEST]] [-a [ALL]] [-g [GREATER]]
 
@@ -50,21 +35,29 @@ $ python run.py -h
           To get all version of the package. By default it is False.
       -g [GREATER], --greater [GREATER]
           To get all versions greaterthan the given package version. By default it is False.
+```
 
->> Check the latest version of given package.
+Check the latest version of given package.
+```python
 $ python run.py -p django
 Package Name : django, Package Version : 3.0.1, Required Python Version : >=3.4
+```
 
->> Check all versions of given package.
+Check all versions of given package.
+```python
 $ python run.py -p django -a True
 Package Name : django, Package Version : 2.1b1, Required Python Version : >=3.5
 Package Name : django, Package Version : 1.11a1, Required Python Version : None
 Package Name : django, Package Version : 2.0.13, Required Python Version : >=3.4
 Package Name : django, Package Version : 2.0.12, Required Python Version : >=3.4
+```
 
->> Check all the versions which are greater than specified package version.
+Check all the versions which are greater than specified package version.
+```python
 $ python run.py -p django==3.0 -g True
 Package Name : django, Package Version : 3.0.1, Required Python Version : >=3.4
->> Write output to csv file.
+```
+Write output to csv file.
+```python
 python run.py -p django==3.0 -g True -o versions.csv
 ```
