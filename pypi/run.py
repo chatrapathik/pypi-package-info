@@ -16,7 +16,7 @@ def main(options):
     ProcessInput(input_file, output_file, package, all_versions, latest, greater)
 
 
-if __name__ == "__main__":
+def run():
     """
     Parse the options to run with the debug mode, and the port number"
     """
@@ -71,3 +71,7 @@ if __name__ == "__main__":
 
     options = parser.parse_args()
     main(options)
+
+
+if __name__ == "__main__":
+    run()

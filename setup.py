@@ -18,5 +18,5 @@ setup(
         "Intended Audience :: Developers",
         "License :: MIT License",
     ],
-    entry_points={"console_scripts": ["ppvt = pypi:main"]},
+    entry_points={"console_scripts": ["ppvt = pypi:run"]},
 )
